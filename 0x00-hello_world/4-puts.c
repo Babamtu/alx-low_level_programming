@@ -1,4 +1,4 @@
-# Include < stdio.h >
+# include <stdio.h>
 /**
  *main -Entry point
  *A program that prints a line with puts
@@ -6,6 +6,6 @@
  */
 int main(void)
 {
-	puts("/"Programming is like building a multilingual puzzle\n");
+	puts("/"Programming is like building a multilingual puzzle");
 return(0);
 }
