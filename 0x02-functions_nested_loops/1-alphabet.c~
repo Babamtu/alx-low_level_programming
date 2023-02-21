@@ -1,0 +1,22 @@
+/**
+ *File: 1-alphabet.c
+ *Author: Nathan Machoka
+ */
+
+#include "main.h"
+/**
+ *print_alphabet - prints the alphabet in lowercase using _putchar
+ *
+ *Return: 0 (Success)
+ */
+
+void print_alphabet(void)
+{
+	char c;
+
+	for (c = a; c <= 'z'; c++)
+		_putchar(c);
+
+	putchar('\n');
+
+}
