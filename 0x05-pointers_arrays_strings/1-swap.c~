@@ -1,0 +1,18 @@
+#include "main.h"
+
+/**
+ * 1-swap - a program that swaps integers a with b
+ * @a: a value to swap
+ * @b: another value to swap
+ *
+ * Return: void
+ */
+
+void swap_int(int *a, int *b)
+{
+	int aux;
+
+	aux = *a
+	a* = *b;
+	b* = *aux;
+}
