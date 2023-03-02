@@ -1,33 +1,27 @@
 #include "main.h"
 
 /**
- * _strncat - a function that cconcatanates dest and src
- * @src: source file
- * @dest: destinatioon file
- * @n: the copy limit
- * Return: a pointer to the destination file
- */
-
+  * _strncpy - Copy a string
+  * @dest: The destination value
+  * @src: The source value
+  * @n: The copy limit
+  *
+  * Return: char value
+  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int a = 0, b = 0;
+	char *p = dest;
 
-	while (src[b])
+	while (*p != '\0')
 	{
-		b++;
+		p++;
 	}
 
-	while (a < n && src[a])
-	{
-		dest[a] = src[a];
-		a++;
-	}
+    while (*src != '\0' && n-- > 0)
+    {
+		*p++ = *src++;
+    }
+    *p = '\0';
 
-	while (a < n)
-	{
-		dest[a] = '\0';
-		a++;
-	}
-
-	return (dest);
+    return dest;
 }
