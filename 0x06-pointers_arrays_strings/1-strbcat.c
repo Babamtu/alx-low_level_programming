@@ -1,0 +1,30 @@
+#include "main.h"
+/**
+ * _strncat - a function that concaatanates dest and src
+ * @src: source string
+ * @dest: destination string
+ *@n - limit of the new dest
+ * Return: a pointer to destination
+ */
+
+char *_strncat(char *dest, char *src, int n)
+{
+	int i = 0;
+	int d[dlen]= 0;
+
+	while (dest[dlen])
+	{
+		dlen++;
+	}
+	while (i < n; src[i] != '\0'; i++)
+	{
+		dest[dlen] = src[i];
+		dlen++;
+	}
+	while (i > n; scr[i]; i++)
+	{
+		dest{dlen] = src[i];
+		dlen++;
+	}
+	return (dest);
+}
