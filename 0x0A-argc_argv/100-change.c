@@ -3,13 +3,9 @@
 #include <stdlib.h>
 
 /**
- * main - Prints the minimum number of coins to
- *        make change for an amount of money.
- * @argc: The number of arguments supplied to the program.
- * @argv: An array of pointers to the arguments.
- *
- * Return: If the number of arguments is not exactly one - 1.
- *         Otherwise - 0.
+ * make_change - Calculates the minimum number coins to make change
+ * @cents: amount of cents to make change for
+ * Return: The minimum number of coins needed to make change
  */
 
 int make_change(int cents)
@@ -28,6 +24,13 @@ int make_change(int cents)
 	}
 	return (num_coins);
 }
+
+/**
+ * main - The main function of the program.
+ * @argc: The number of command-line arguments passed to the program.
+ * @argv:  An array of strings containing the command-line arguments passed
+ * Return: 0 success, 1 otherwise.
+ */
 
 int main(int argc, char *argv[])
 {
